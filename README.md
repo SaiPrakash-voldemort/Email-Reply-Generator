@@ -1,32 +1,66 @@
 # Email Reply Generator
 
-**Email Reply Generator** is a Java-based full-stack project that leverages AI (Gemini AI) to automatically generate email replies based on various tones (formal, casual, etc.). The backend is built using Spring Boot, while the frontend uses React.js for a user-friendly interface.
+This project is a full-stack web application that generates email replies in different tones using Gemini AI. It also includes a Chrome extension for seamless integration with email platforms.
 
 ## Features
-- **Backend**: 
-  - Spring Boot, Spring Web, WebFlux for handling HTTP requests
-  - Lombok for boilerplate code reduction
-  - Integration with Gemini AI to generate email replies
 
-- **Frontend**:
-  - React.js, Material UI, Tailwind CSS for a responsive design
-  - Axios for API calls
-  - Interactive UI for easy email reply generation
+*   **Tone-based Reply Generation:** Generates email replies based on user-selected tones (e.g., formal, informal, persuasive).
+*   **Gemini AI Integration:** Leverages Gemini AI for high-quality, contextually appropriate email replies.
+*   **User-Friendly Interface:**  A React frontend provides an intuitive interface for composing emails, selecting tones, and viewing generated responses.
+*   **Chrome Extension:** A Chrome extension adds an "AI Reply" button to email platforms, enabling one-click reply generation.
+*   **DOM Manipulation:** The Chrome extension extracts email content directly from the DOM for streamlined processing.
+*   **RESTful API:**  A Java Spring Boot backend provides a RESTful API for communication between the frontend and backend.
 
-- **Chrome Extension**:
-  - Adds an "AI Reply" button next to the "Send" button in Gmail
-  - Extracts email content from the DOM and generates a reply directly in the reply box
+## Technologies Used
 
-## Getting Started
+*   **Backend:** Java, Spring Boot, Maven
+*   **Frontend:** React, JavaScript, Axios, Material UI, Emotion, Vite
+*   **AI:** Gemini AI
+*   **Other:** Chrome Extension API
 
-### Prerequisites
-- JDK 23 or higher
-- Node.js (for React.js)
-- A Gemini AI API key (for generating email replies)
+## Installation
 
-### Backend Setup
-1. Clone the repository.
-2. Set up your environment variables for the Gemini AI API.
-3. Run the Spring Boot application:
-   ```bash
-   mvn spring-boot:run
+### Backend
+
+1.  Clone the repository: `git clone [backend_repository_url]` *(Replace with your actual URL)*
+2.  Navigate to the backend directory: `cd Email-Writer-SB`
+3.  Build the project using Maven: `mvn clean install`
+4.  Run the application: `mvn spring-boot:run`
+
+### Frontend
+
+1.  Clone the repository: `git clone [frontend_repository_url]` *(Replace with your actual URL)*
+2.  Navigate to the frontend directory: `cd email-writer-react`
+3.  Install dependencies: `npm install`
+4.  Start the development server: `npm run dev`
+
+### Chrome Extension
+
+1.  Package the extension.  *(Explain how to package your extension)*
+2.  Open Chrome and go to `chrome://extensions/`.
+3.  Enable "Developer mode".
+4.  Click "Load unpacked".
+5.  Select the directory containing your packaged extension.
+
+## Usage
+
+### Web Application
+
+1.  Access the web application at `[Application URL]` *(If deployed)* or `[Localhost URL]` during development.
+2.  Compose your email.
+3.  Select the desired tone.
+4.  Click "Generate Reply".
+
+### Chrome Extension
+
+1.  Open an email in your email platform.
+2.  Click the "AI Reply" button next to the send button.
+3.  The generated reply will appear in the reply area.
+
+## Contributing
+
+Contributions are welcome! Please open an issue or submit a pull request.
+
+## License
+
+[License Information]
